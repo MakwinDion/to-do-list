@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portfolio Website</title>
+  <link rel="shortcut icon" type="image" href="./Makwin2-removebg-preview.png" >
+  <link rel="stylesheet" href="style4.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
+  <script src="https://kit.fontawesome.com/60efc248a9.js" crossorigin="anonymous"></script>
+</head>
+<body>
+  <div id="preloader"></div>
+  <div id="header">
+    <div class="container">
+      <nav>
+        <img src="./Makwin4-removebg-preview.png" alt="this is a logo" class="logo">
+        <ul id="sidemenu">
+         
+           <li><a href="#header">Home</a></li> 
+            <li> <a href="#about">About</a></li>
+           <li> <a href="#services">Services</a></li>
+          <li>  <a href="#portfolio">Projects</a></li>
+           <li> <a href="#contact">Contact</a> </li>
+           <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
+        </ul>
+       
+        <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+      </nav>
+      <div class="headertext">
+        <h2><p>Hi,My Name is <span>Makwin</span></p></h2>
+      
+      <div><h2>And I am a Passionate</h2></div>   
+      <span id="element"></span>
+    </div>
+    </div>
+  </div>
+  <!-----about--->
+  <div id="about">
+    <div class="container">
+      <div class="row">
+        <div class="about-col-1">
+          <img src="./2023-09-26 (1).png" alt="Image" >
+        </div>
+        <div class="about-col-2">
+          <h1 class="sub-title">About Me</h1>
+          <p class="content">Hi,My name is <span>Makwin Dion D Cunha.</span>and  I am a dedicated student  at canara engineering college,currently immersed in the dynamic field of Artificial 
+            Intelligence and Machine Learning (AI/ML). My academic pursuit involves delving into the intricacies 
+            of advanced technologies, exploring the vast potential that AI/ML presents for shaping the future. Beyond the academic realm,
+             my passion extends to the creative domains of design and development. Proficient in graphic design, I specialize 
+             in crafting compelling logos and visually engaging posters. My expertise also encompasses UI/UX design, where I focus on creating 
+             seamless and user-friendly interfaces. On the technical side, I excel in web development, implementing full-stack solutions that 
+             seamlessly blend functionality and aesthetic appeal. As a freelancer, I relish the opportunity to explore diverse projects, leveraging my skills 
+             to bring creative ideas to life. My journey is defined by a commitment to continuous learning, a passion for the analytical and artistic 
+             facets of technology, and a drive to make a meaningful impact in the world of AI and design.</p>
+          <div class="tab-titles">
+            <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+            <p class="tab-links"onclick="opentab('experince')">Experience</p>
+            <p class="tab-links" onclick="opentab('education')">Education</p>
+          </div>
+          <div class="tab-contents active-tab" id="skills">
+            <ul>
+              <li><span>UI/UX:</span><br>Designing web/app Interfaces</li>
+              <li><span>Web Development:</span><br>Full Stack web Development</li>
+              <li><span>Graphic Designing:</span><br>Designing Logos and Posters</li>
+            </ul>
+          </div>
+          <div class="tab-contents" id="education">
+            <ul>
+              <li><span>2019-2020:</span><br>SSLC</li>
+              <li><span>2020-2022:</span><br>pre university college</li>
+              <li><span>2022-Current:</span><br>B.E in Artificial Intillegence and Meachine Learning</li>
+            </ul>
+          </div>
+          <div class="tab-contents" id="experince">
+            <ul>
+              <li><span>2020-Current:</span><br>Designing web/app Interfaces</li>
+              <li><span>2020-Current:</span><br>Full Stack web Development</li>
+              <li><span>2020-Current:</span><br>Designing Logos and Posters</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-----Services--->
+  <div id="services">
+    <div class="container">
+      <h1 class="sub-title">My Services</h1>
+      <div class="services-list">
+        <div>
+          <i class="fa-solid fa-code"></i>
+          <h2>Web Development </h2>
+           <p class="content">I possess a robust skill set in web development, 
+            seamlessly merging technical proficiency with a discerning eye for design.</p>
+            <a href="#">Learn More</a>
+        </div>
+        <div>
+          <i class="fa-solid fa-crop-simple"></i>
+          <h2>UI/Ux Designs</h2>
+           <p class="content">my passion extends to the creative domains of design and development. Proficient in graphic design, I specialize 
+            in crafting compelling logos and visually engaging posters. My expertise also encompasses UI/UX design, where I focus</p>
+            <a href="#">Learn More</a>
+        </div>
+        <div>
+          <i class="fa-solid fa-paintbrush"></i>
+          <h2>Graphic Designs</h2>
+           <p class="content" >I possess a robust skill set in Graphic Design, 
+            seamlessly merging technical proficiency with a discerning eye for design.</p>
+            <a href="#">Learn More</a>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-----Portfolio--->
+  <div id="portfolio">
+    <div class="container">
+      <h1 class="sub-title">My portfolio</h1>
+      <div class="work-list">
+        <div class="work">
+          <img src="Coding club.png" alt="poster1">
+          <div class="layer">
+            <h3 class="content">Poster for coding club</h3>
+            <p class="content">just a poster created from canva </p>
+            <a href="#"><i class="fa-solid fa-link"></i></a>
+          </div>
+        </div>
+        <div class="work">
+          <img src="AAKRITI.png" alt="poster3">
+          <div class="layer">
+            <h3 class="content">Competative Poster for an event</h3>
+            <p class="content">just a poster created from canva </p>
+            <a href="#"><i class="fa-solid fa-link"></i></a>
+          </div>
+        </div>
+        <div class="work">
+          <img src="classical Music classes.png" alt="poster2">
+          <div class="layer">
+            <h3 class="content">Logo for wood stock Music class</h3>
+            <p class="content">just a poster created from canva </p>
+            <a href="#"><i class="fa-solid fa-link"></i></a>
+          </div>
+        </div>
+      </div>
+      <a href="logos2.html" class="btn">See More</a>
+    </div>
+  </div>
+  <!-----contact----->
+  <div id="contact">
+    <div class="container">
+      <div class="row">
+        <div class="contact-left">
+          <h1 class="sub-title">Contact Me</h1>
+          <p><i class="fa-solid fa-envelope"></i>makwindion0803@gmail.com</p>
+          <p><i class="fa-solid fa-mobile"></i>+91 7829981170</p>
+          <div class="social-icons">
+            <a href ="https://www.facebook.com/makwindion.dcunha" ><i class="fa-brands fa-facebook"></i></a>
+            <a href="https://www.instagram.com/mr_dcunha/"><i class="fa-brands fa-instagram"></i></a>
+            <a href="https://twitter.com/codemak61526"><i class="fa-brands fa-twitter"></i></a>
+            <a href="https://www.linkedin.com/in/makwin-dion-d-cunha-29639a217/"><i class="fa-brands fa-linkedin"></i></a>
+            <a href="https://github.com/MakwinDion"><i class="fa-brands fa-github"></i></a>
+            <a href="https://www.upwork.com/freelancers/~01041fb3a270b08b2b"><i class="fa-solid fa-desktop"></i></a>
+          </div>
+          <a href="images/my-cv.pdf" download class="btn btn2" >Download CV</a>
+        </div>
+        <div class="contact-right">
+          <form name="submit-to-google-sheet" >
+            <input type="text " name="name" placeholder="your name" required>
+            <input type="email" name="email" placeholder="your email" required>
+            <textarea name="message"  rows="6" placeholder="your Message"></textarea>
+            <button type="submit" class="btn btn2">Submit</button>
+          </form>
+          <span id="msg"></span>
+        </div>
+      </div>
+    </div>
+    <div class="copyright">
+      <p>copyright © Makwin .Made with <i class="fa-regular fa-heart" style="color: #ff4000;"></i></p>
+    </div>
+  </div>
+  <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script> 
+  <script>
+    var typed = new Typed('#element', {
+      strings: ['Web Developer', 'Graphic Designer','Programer','Freelancer','Ui/Ux designer'],typeSpeed: 75,
+    });
+  </script>
+   <script>
+    var loader=document.getElementById("preloader");
+    window.addEventListener("load",function(){
+      loader.style.display="none"
+    })
+  </script>
+  <script>
+    var tablinks=document.getElementsByClassName("tab-links");
+    var tabcontents=document.getElementsByClassName("tab-contents");
+    function opentab(tabname)
+    {
+      for(tablink of tablinks)
+      {
+        tablink.classList.remove("active-link");
+      }
+      for(tabcontent of tabcontents)
+      {
+        tabcontent.classList.remove("active-tab");
+      }
+      event.currentTarget.classList.add("active-link");
+      document.getElementById(tabname).classList.add("active-tab");
+    }
+  </script>
+  <script>
+    var sidemenu=document.getElementById("sidemenu");
+    function openmenu(){
+      sidemenu.style.right="0";
+    }
+    function closemenu(){
+      sidemenu.style.right="-200px";
+    }
+  </script>
+  <script>
+    const scriptURL = 'https://script.google.com/macros/s/AKfycbxUJhE26iqi9e5_svbexu-ZY79PtcGIxjU7MGk7VpmQ4PJJHpI1U09pcGHk9891N_cRKw/exec'
+    const form = document.forms['submit-to-google-sheet']
+    const msg=document.getElementById("msg")
+  
+    form.addEventListener('submit', e => {
+      e.preventDefault()
+      fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+        .then(response =>{ msg.innerHTML="Message sent Sucessfully"
+        setTimeout(function(){
+          msg.innerHTML=""
+        },5000)
+        form.reset()
+      })
+        .catch(error => console.error('Error!', error.message))
+    })
+  </script>
+</body>
+</html>
